@@ -43,12 +43,19 @@
             background-color: #45a049;
         }
 
-        footer {
+        .footer {
           text-align: center;
           padding: 3px;
           background-color: black;
           color: white;
+          margin-top: auto;
        }
+        .flex-wrapper {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
     </style>
 </head>
 <body>
@@ -68,10 +75,11 @@
         <p>Input Minterms: {{ minterms }}</p>
         <!--<p>Number of Variables: {{ dc }}</p>-->
     {% endif %}
-<footer>
-  <p>Made By: Tarun Sehgal <br></p>
-  <p>Roll No: 23201712 <br></p>
-</footer>
+<div class="flex-wrapper">
+        <div class="footer">Made By: Tarun Sehgal <br>
+            Roll No: 23201712 <br>
+          </div>
+      </div>
 </body>
 </html>
 
